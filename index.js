@@ -1,5 +1,8 @@
-const Reader = require("./../fizzbuzz/lib/utils/Reader")
+const Reader = require("./lib/utils/Reader")
+const ExplorerService = require("./lib/services/ExplorerService")
 
-const explorers = Reader.readJsonFile("explorer.json")
+const explorers = Reader.readJsonFile("explorers.json")
+//console.log(explorers)
 
-console.log(explorers)
+//aplicacion del ExplorerService sobre la lista explorers
+console.log(ExplorerService.filterByMission(explorers, "node"));
