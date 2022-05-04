@@ -9,6 +9,6 @@ describe("Test para ExplorerController", () => {
 
     test("Requerimiento 2: Obtener usernames de explorers con getExplorerUsernameByMission", () => {
         const explorersUsernames = ExplorerController.getExplorerUsernamesByMission("node")
-        expect(explorersUsernames).toContain("ajolonautaaa14");
+        expect(explorersUsernames).toContain("ajolonauta14");
     });
 });
