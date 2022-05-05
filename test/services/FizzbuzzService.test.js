@@ -25,4 +25,28 @@ describe("Test para FizzBuzz Service", () => {
         expect(explorer.trick).toBe("FIZZBUZZ");
     });
 
+    test("Número con score 1", () => {
+        const number1 = {score: 1};
+        number = FizzbuzzService.applyValidationInNumber(number1);
+        expect(number.trick).toBe(1);
+    });
+    
+    test("Número con score 3", () => {
+        const number3 = {score: 3};
+        number = FizzbuzzService.applyValidationInNumber(number3);
+        expect(number.trick).toBe("FIZZ");
+    });
+
+    test("Número con score 5", () => {
+        const number5 = {score: 5};
+        number = FizzbuzzService.applyValidationInNumber(number5);
+        expect(number.trick).toBe("BUZZ");
+    });
+
+    test("Número con score 15", () => {
+        const number15 = {score: 15};
+        number = FizzbuzzService.applyValidationInNumber(number15);
+        expect(number.trick).toBe("FIZZBUZZ");
+    });
+
 });
