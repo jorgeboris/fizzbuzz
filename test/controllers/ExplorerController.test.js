@@ -16,4 +16,10 @@ describe("Test para ExplorerController", () => {
         const explorersAmount = ExplorerController.getExplorersAmountByMission("node");
         expect(explorersAmount).toBe(10);
     });
+
+    test("Requerimiento 4: Obtener Fizbuzz con getScoreInNumber", () => {
+        const number1 = {score: 1};
+        const numberScore = ExplorerController.getScoreInNumber(number1);
+        expect(numberScore.trick).toBe(1);
+    });
 });
