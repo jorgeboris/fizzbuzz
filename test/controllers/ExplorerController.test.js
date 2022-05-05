@@ -8,12 +8,12 @@ describe("Test para ExplorerController", () => {
     });
 
     test("Requerimiento 2: Obtener usernames de explorers con getExplorersUsernameByMission", () => {
-        const explorersUsernames = ExplorerController.getExplorersUsernamesByMission("node")
+        const explorersUsernames = ExplorerController.getExplorersUsernamesByMission("node");
         expect(explorersUsernames).toContain("ajolonauta14");
     });
 
     test("Requerimiento 3: Obtener cantidad de explorers con getExplorersAmountByMission", () => {
-        const explorersAmount = ExplorerController.getExplorersAmountByMission("node")
+        const explorersAmount = ExplorerController.getExplorersAmountByMission("node");
         expect(explorersAmount).toBe(10);
     });
 });
