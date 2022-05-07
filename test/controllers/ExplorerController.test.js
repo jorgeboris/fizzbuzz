@@ -18,8 +18,7 @@ describe("Test para ExplorerController", () => {
     });
 
     test("Requerimiento 4: Obtener Fizbuzz con getScoreInNumber", () => {
-        const number1 = {score: 1};
-        const numberScore = ExplorerController.getScoreInNumber(number1);
-        expect(numberScore.trick).toBe(1);
+        const numberScore = ExplorerController.getScoreInNumber(1);
+        expect(numberScore).toBe(1);
     });
 });
